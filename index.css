@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(sunset+coco.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a{
+    color: rgb(110, 173, 177);
+}

@@ -4,19 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signin.css">
     <title>Signin</title>
 </head>
 <body>
     <div id="lform">
-        <form action="check.php">
+        <form action="signin.php" method="post"  id="lform">
             <fieldset>
                 <legend>SIGNIN</legend>
                 <input type="text" name="username" id="lusrnm" placeholder="Username" required>
-                <input type="password" name="Password" id="lpwd" placeholder="Password" required>
-                <input type="submit" value="LOGIN">
+                <input type="password" name="password" id="lpwd" placeholder="Password" required>
+                <input type="submit" value="LOGIN" id="signinbtn">
+                <br><hr><br>
+                <h1>Create New Account
+                    <a href="signup.html">Signup</a>
+                </h1>
             </fieldset>
-            
         </form>
+        <div align="center" class="image">
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                <label >Select image:<input type="file" name="image" id="img" accept=".jpg , .png, .jpeg"></label>
+                <input type="submit" name="upload" value="upload">
+            </form>
+        </div>
     </div>
+<Script>
+</Script>
 </body>
 </html>

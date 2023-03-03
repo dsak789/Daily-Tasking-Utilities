@@ -9,18 +9,18 @@
 </head>
 <body>
     <div id="rformdiv">
-        <form action="#" id="rform"> 
+        <form action="signup.php" method="post" id="rform" enctype="multipart/form-data"> 
         <fieldset>
             <legend>SIGNUP</legend>
             <input type="text" name="fname" id="fname" placeholder="Enter First Name" required>
             <input type="text" name="lname" id="lname" placeholder="Enter Last Name" required>
-            <input type="number" name="Phno" id="phno" placeholder="Phone No" required>
+            <input type="number" name="Phno" id="phno" placeholder="Phone No" required>  
+            <label >Select image:<input type="file" name="image" id="img" accept=".jpg , .png, .jpeg"></label>
         <div>
             <label>DOB<input type="date" name="dob" id="dob" required></label>
-            <label ><input type="radio" name="gender" id="male"  required>Male</label>
-            <label ><input type="radio" name="gender" id="female"  required>Female</label>
-            <label ><input type="radio" name="gender" id="others"  required>Others</label>
-
+            <label ><input type="radio" name="gender" id="male" value="male"  required>Male</label>
+            <label ><input type="radio" name="gender" id="female"  value="female" required>Female</label>
+            <label ><input type="radio" name="gender" id="others" value="others"  required>Others</label>
         </div>
             <input type="email" name="username" id="usrnm" placeholder="Enter Username" required>
             <input type="password" name="password" id="rpwd" placeholder="Password" required>
@@ -29,7 +29,7 @@
             <input type="text" name="rno" id="rno" placeholder="Roll No" required>
             <input type="text" name="branch" id="branch" placeholder="Branch" required>
             <input type="text" name="yr-sem" id="yesm" placeholder="Year-Semester" required>
-            <button type="submit" id="signupbtn" value="SIGNUP">SIGNUP</button>
+            <button type="submit" name="signup"id="signupbtn" value="SIGNUP">SIGNUP</button>
             <br><hr><br>
             <h3 id="alreg">Already Registered..?<a href="signin.html"> Login</a></h3>
         </fieldset>

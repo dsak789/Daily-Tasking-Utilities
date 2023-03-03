@@ -1,42 +1,43 @@
 *{
     margin: 0;
     padding: 0;
-    user-select: none;
     font-family: 'Times New Roman', Times, serif;
 }
+
 body{
     display: flex;
-    background: url(ship+girl.jpg);
-    height: max-content;
+    flex-direction: column;
+    background-image: url('sun+deer.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: fixed;
 }
-#rform {
+#lform{
+    display: flex;
+    flex-direction: column;
     margin-left: 250px;
     padding: 50px;
 }
-
 fieldset{
     background-color: rgba(235, 231, 227, 0.514);
     height: fit-content;
-    width: 500px;
+    width: 400px;
     border-radius: 15px;
     text-align: center;
     display: flex;
     flex-direction: column;
     padding: 20px;
 }
-#rform input{
+#lform input{
     background-color: rgba(211, 211, 211, 0.174);
     color: rgb(0, 0, 0);
     padding: 10px;
     margin: 5px;
     font-size:medium;
     border-radius: 15px;
-    
+    color: rgb(36, 39, 39);
 }
-#rform input:hover{
+#lform input:hover{
     background-color: rgba(85, 79, 79, 0.375);
     color: rgb(0, 0, 0);
     padding: 10px;
@@ -45,37 +46,24 @@ fieldset{
     font-size: medium;
     border-color: aqua;   
 }
-
-#rform #rno{
-    text-transform:uppercase;
-}
-#ajju{
-    margin-top: 250px;
-    margin-right: 200px;
-    height: 500px;
-    width: 500px;
-}
-#alreg {
-    color: rgb(255, 17, 0);
-}
 a{
-    color:skyblue;
+    color:rgb(59, 106, 125);
     text-decoration: none;
 }
-
-#rform #signupbtn ,#rform #edu{
-    color: rgb(8, 33, 109);
+#lform #signinbtn ,#lform #edu{
+    color: rgb(6, 46, 164);
     font-size: x-large;
     font-style:bold;
     border-radius: 15px;
-    font-weight: 100px;
+    font-weight: 500px;
+    font-family:cursive;
     background-color: rgba(43, 65, 74, 0.43);
 }
-#rform #signupbtn:hover{
-    cursor:pointer;
+#lform #signinbtn:hover{
+    cursor: pointer;
     color: rgb(52, 63, 95);
     font-size: x-large;
-    font-weight: 500px;
+    font-weight: 100px;
     background-color: rgba(78, 121, 138, 0.697);
 }
 legend{
